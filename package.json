@@ -22,8 +22,9 @@
     "react-dom": "^19.2.5"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --watch",
+    "dev": "vite",
+    "build": "tsup src/index.ts",
+    "preview": "vite preview",
     "prepublishOnly": "pnpm build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -39,12 +40,14 @@
     "@types/react-dom": "^19.2.3",
     "@typescript-eslint/eslint-plugin": "^8.58.2",
     "@typescript-eslint/parser": "^8.58.2",
+    "@vitejs/plugin-react": "^6.0.1",
     "eslint": "^9",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "prettier": "^3.8.3",
     "tsup": "^8.5.1",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.2",
+    "vite": "^8.0.8"
   }
 }
